@@ -4,8 +4,7 @@ def prime?(integer)
   elsif
     range = (2..(integer - 1))
     range.each do |num|
-       integer % num == 0
-       return false
+      return false if integer % num == 0
     end
   else
    return true
