@@ -6,7 +6,7 @@ def prime?(integer)
   else
     range = (2...(integer - 1)).to_a
     range.collect do |num|
-      integer % num == 0 ? false : true
+      integer % num == 0 ? true : false
       # return false if integer % num == 0
       # return true if integer % num != 0
     end
