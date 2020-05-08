@@ -20,6 +20,6 @@ def prime?(integer)
     return true
   else
     range = (2...(integer - 1)).to_a
-    range.any? {|num| integer % num == 0}
+    range.any? {|num| integer % num != 0}
  end
 end
