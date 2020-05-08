@@ -8,6 +8,5 @@ def prime?(integer)
     range.any? {|num| integer % num == 0}
       # return false if integer % num == 0
       # return true if integer % num != 0
-    end
  end
 end
