@@ -3,7 +3,7 @@ def prime?(integer)
     return false
   elsif integer == 2
     return true
-  else integer > 2
+  else
     range = (2...(integer - 1))
     range.each do |num|
       integer % num == 0 ? false : true
