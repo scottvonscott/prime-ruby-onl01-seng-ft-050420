@@ -1,10 +1,10 @@
-# Add  code here!
 def prime?(integer)
   if integer < 2
     return false
   elsif
-    (2..(integer - 1)).each do |num|
-      integer % num == 0
+    range = (2..(integer - 1))
+    range.each do |num|
+       integer % num == 0
        return false
     end
   else
